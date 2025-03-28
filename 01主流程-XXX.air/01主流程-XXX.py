@@ -46,7 +46,7 @@ try:
 	try:
 		poco("XXX").child("XXX").child()[-1].click()
 		touch([1, 1])
-		text("a")
+		shell("input text 'a'")
 		keyevent("ENTER")
 		swipe([0.5, 0.5], [0.5, 0.1], duration=1.0)
 	except PocoNoSuchNodeException as e:
